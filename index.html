@@ -1,78 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="text/html">
     <head>
-        <title>zssoib</title>
-        <link rel="icon" href="favicon.ico">
-        <link rel='shortcut icon' href='favicon.ico'/>
-        <meta name="title" content="zssoib">
-        <meta name="description" content="could it be a flag?">
-        <meta name="keywords" content="zss, zssoib, zssoib{},flag, зсс, оиб, мошонки">
-        <meta name="robots" content="index, follow">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="language" content="Russian">
-        <meta name="revisit-after" content="1 days">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="task-na-osint">
-        
+        <meta name="title" content="secretroom">
+        <meta name="description" content="description">
+        <script src='js-encoded.js'></script>
         <style>
-            p {
-               font-size: 7.7083vw;
+            @keyframes bgcolor {
+                0% {
+                    background-color: #ffdef2
+                }
+
+                30% {
+                    background-color: #f2e2ff
+                }
+
+                60% {
+                    background-color: #e2eeff
+                }
+
+                90% {
+                    background-color: #ddfffc
+                }
+
+                100% {
+                    background-color: #ffffe3
+                }
             }
-            p:hover{
-                color: white;
-                user-select: none;
-            }
+
             body {
-                padding: 0px;
-                margin: 0px;
+                -webkit-animation: bgcolor 17s infinite;
+                animation: bgcolor 8s infinite;
+                -webkit-animation-direction: alternate;
+                animation-direction: alternate;
+            }
+
+            p {
+                font-size: 8vw  /* 14/19.2 */;
+                margin: 5.4vh  /* 15/19.2 */
+            }
+
+            p:hover{
+                user-select: none;
+                opacity: 0;
+            }
+
+            body {
+                padding: 0;
+                margin: 0;
                 display: flex;
                 align-self: center;
                 align-items: center;
                 flex-direction: column;
                 width: 100vw;
+                height: auto;
             }
+
             img {
-                width: 90%;
+                object-fit: fill;
+                height: inherit;
+                width: inherit;
             }
+
+            ::selection {
+                opacity: 0;
+            }
+
         </style>
+
+        <!-- searching for a flag in sources is not how you solve this task  -->
         <script>
             window.onbeforeunload = function() {
-               return "Посхалкоооо";
+               return "Going somewhere?";
             };
         </script>
-        
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript" >
-           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-           m[i].l=1*new Date();
-           for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-           k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-        
-           ym(96686350, "init", {
-                clickmap:true,
-                trackLinks:true,
-                accurateTrackBounce:true,
-                webvisor:true
-           });
-        </script>
-        <noscript><div><img src="https://mc.yandex.ru/watch/96686350" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-        <!-- /Yandex.Metrika counter -->
-        
+
     </head>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SXDH1CV78"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-0SXDH1CV78');
-    </script>
-    
     <body>
-        <p>zssoib{poshalko}</p>
-        <img src="https://i.pinimg.com/originals/8a/39/03/8a390326148f845c0e26c23d56b7fde9.gif">
+        <p onCopy="return false;" onCut="return false;">zssoib{pr0bably_n0t_a_flag}</p>
+        <img src="https://i.pinimg.com/originals/8a/39/03/8a390326148f845c0e26c23d56b7fde9.gif" alt="get rickrolled lol">
     </body>
 </html>
