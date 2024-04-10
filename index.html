@@ -1,83 +1,27 @@
 <!DOCTYPE html>
 <html lang="text/html">
+
     <head>
         <meta name="title" content="secretroom">
-        <meta name="description" content="description">
+        <meta name="robots" content="noindex">
         <script src='js-encoded.js'></script>
-        <style>
-            @keyframes bgcolor {
-                0% {
-                    background-color: #ffdef2
-                }
-
-                30% {
-                    background-color: #f2e2ff
-                }
-
-                60% {
-                    background-color: #e2eeff
-                }
-
-                90% {
-                    background-color: #ddfffc
-                }
-
-                100% {
-                    background-color: #ffffe3
-                }
-            }
-
-            body {
-                -webkit-animation: bgcolor 17s infinite;
-                animation: bgcolor 8s infinite;
-                -webkit-animation-direction: alternate;
-                animation-direction: alternate;
-            }
-
-            p {
-                font-size: 8vw  /* 14/19.2 */;
-                margin: 5.4vh  /* 15/19.2 */
-            }
-
-            p:hover{
-                user-select: none;
-                opacity: 0;
-            }
-
-            body {
-                padding: 0;
-                margin: 0;
-                display: flex;
-                align-self: center;
-                align-items: center;
-                flex-direction: column;
-                width: 100vw;
-                height: auto;
-            }
-
-            img {
-                object-fit: fill;
-                height: inherit;
-                width: inherit;
-            }
-
-            ::selection {
-                opacity: 0;
-            }
-
-        </style>
-
-        <!-- searching for a flag in sources is not how you solve this task  -->
+        <link rel="stylesheet" href="styles.css">
         <script>
-            window.onbeforeunload = function() {
-               return "Going somewhere?";
+            window.onbeforeunload = function() {};
+        </script>
+        <title>secretroom</title>
+        <!-- nothing to see here. really. -->
+    </head>
+
+    <body>
+        <div id="bait"></div>
+        <script>
+            window.oncontextmenu = function() {
+                document.getElementById("bait").click();
             };
         </script>
-
-    </head>
-    <body>
-        <div style="position: absolute; width: 100vw; height: 100vh"></div>
         <p onCopy="return false;" onCut="return false;">zssoib{pr0bably_n0t_a_flag}</p>
         <img src="https://i.pinimg.com/originals/8a/39/03/8a390326148f845c0e26c23d56b7fde9.gif" alt="get rickrolled lol">
     </body>
+
 </html>

@@ -1,0 +1,65 @@
+@keyframes bgcolor {
+    0% {
+        background-color: #ffdef2
+    }
+
+    30% {
+        background-color: #f2e2ff
+    }
+
+    60% {
+        background-color: #e2eeff
+    }
+
+    90% {
+        background-color: #ddfffc
+    }
+
+    100% {
+        background-color: #ffffe3
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 17s infinite;
+    animation: bgcolor 8s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+p {
+    font-size: 8vw  /* 14/19.2 */;
+    margin: 5.4vh  /* 15/19.2 */
+}
+
+p:hover{
+    user-select: none;
+    opacity: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+}
+
+img {
+    object-fit: fill;
+    height: inherit;
+    width: inherit;
+}
+
+::selection {
+    opacity: 0;
+}
+
+#bait {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
