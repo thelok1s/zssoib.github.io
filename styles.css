@@ -49,9 +49,9 @@ body {
 }
 
 img {
-    object-fit: fill;
-    height: inherit;
-    width: inherit;
+
+    height: 100vw;
+    width: auto;
 }
 
 ::selection {
